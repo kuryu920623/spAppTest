@@ -1,9 +1,8 @@
 import React from 'react';
 import {
-  StyleSheet, Text, View, TouchableOpacity,
+  StyleSheet, Text, TouchableOpacity,
 } from 'react-native';
-import { string } from 'prop-types';
-import { func } from 'prop-types';
+import { string, func } from 'prop-types';
 
 export default function CircleButton(props) {
   const { children, onPress } = props;

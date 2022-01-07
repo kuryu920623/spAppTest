@@ -1,40 +1,61 @@
 import React from 'react';
 import {
-  StyleSheet, Text, View, TouchableOpacity,
+  StyleSheet, Text, View, TouchableOpacity, Alert,
 } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 export default function MemoList() {
+  const navigation = useNavigation();
   return (
     <View>
-      <View style={styles.memoListItem}>
+      <TouchableOpacity
+        style={styles.memoListItem}
+        onPress={() => { navigation.navigate('MemoDetail'); }}
+      >
         <View>
           <Text style={styles.memoListItemTitle}>買い物リスト</Text>
           <Text style={styles.memoListItemDate}>2020年3月24日 10:00</Text>
         </View>
-        <TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => { Alert.alert('Are you sure?'); }}
+          style={styles.memoDelete}
+        >
           <Text>X</Text>
         </TouchableOpacity>
-      </View>
+      </TouchableOpacity>
 
-      <View style={styles.memoListItem}>
+      <TouchableOpacity
+        style={styles.memoListItem}
+        onPress={() => { navigation.navigate('MemoDetail'); }}
+      >
         <View>
           <Text style={styles.memoListItemTitle}>買い物リスト</Text>
           <Text style={styles.memoListItemDate}>2020年3月24日 10:00</Text>
         </View>
-        <TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => { Alert.alert('Are you sure?'); }}
+          style={styles.memoDelete}
+        >
           <Text>X</Text>
         </TouchableOpacity>
-      </View>
+      </TouchableOpacity>
 
-      <View style={styles.memoListItem}>
+      <TouchableOpacity
+        style={styles.memoListItem}
+        onPress={() => { navigation.navigate('MemoDetail'); }}
+      >
         <View>
           <Text style={styles.memoListItemTitle}>買い物リスト</Text>
           <Text style={styles.memoListItemDate}>2020年3月24日 10:00</Text>
         </View>
-        <TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => { Alert.alert('Are you sure?'); }}
+          style={styles.memoDelete}
+        >
           <Text>X</Text>
         </TouchableOpacity>
-      </View>
+      </TouchableOpacity>
+
     </View>
 
   );
@@ -60,4 +81,7 @@ const styles = StyleSheet.create({
     lineHeight: 16,
     color: '#848484',
   },
+  memoDelete: {
+    padding: 8,
+  }
 });
