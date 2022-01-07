@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  View, StyleSheet, TextInput, KeyboardAvoidingView,
+  View, StyleSheet, TextInput, KeyboardAvoidingView, Alert,
 } from 'react-native';
 
 import AppBar from '../components/AppBar';

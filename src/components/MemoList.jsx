@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  StyleSheet, Text, View,
+  StyleSheet, Text, View, TouchableOpacity,
 } from 'react-native';
 
 export default function MemoList() {
@@ -11,9 +11,9 @@ export default function MemoList() {
           <Text style={styles.memoListItemTitle}>買い物リスト</Text>
           <Text style={styles.memoListItemDate}>2020年3月24日 10:00</Text>
         </View>
-        <View>
+        <TouchableOpacity>
           <Text>X</Text>
-        </View>
+        </TouchableOpacity>
       </View>
 
       <View style={styles.memoListItem}>
@@ -21,9 +21,9 @@ export default function MemoList() {
           <Text style={styles.memoListItemTitle}>買い物リスト</Text>
           <Text style={styles.memoListItemDate}>2020年3月24日 10:00</Text>
         </View>
-        <View>
+        <TouchableOpacity>
           <Text>X</Text>
-        </View>
+        </TouchableOpacity>
       </View>
 
       <View style={styles.memoListItem}>
@@ -31,9 +31,9 @@ export default function MemoList() {
           <Text style={styles.memoListItemTitle}>買い物リスト</Text>
           <Text style={styles.memoListItemDate}>2020年3月24日 10:00</Text>
         </View>
-        <View>
+        <TouchableOpacity>
           <Text>X</Text>
-        </View>
+        </TouchableOpacity>
       </View>
     </View>
 
