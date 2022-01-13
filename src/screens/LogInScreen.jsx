@@ -29,9 +29,7 @@ export default function LogInScreen(props) {
 
   function handlePress() {
     firebase.auth().signInWithEmailAndPassword(email, password)
-      .then((userCredencial) => {
-        const { user } = userCredencial;
-        console.log(user.uid);
+      .then(() => {
         navigation.reset({
           index: 0,
           routes: [{ name: 'MemoList' }],
@@ -66,7 +64,7 @@ export default function LogInScreen(props) {
         />
         <Button
           label="Submit"
-          onPress={ handlePress }
+          onPress={() => handlePress()}
         />
         <View>
           <Text>Not registered?</Text>

@@ -1,8 +1,7 @@
-import { func } from 'prop-types';
-import { string } from 'prop-types';
 import React from 'react';
+import { func, string } from 'prop-types';
 import {
-  View, StyleSheet, Text, TouchableOpacity,
+  StyleSheet, Text, TouchableOpacity,
 } from 'react-native';
 
 export default function Button(props) {
