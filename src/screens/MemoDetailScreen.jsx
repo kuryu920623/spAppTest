@@ -41,7 +41,7 @@ export default function MemoDetailScreen(props) {
           {memo && memo.bodyText}
         </Text>
       </View>
-      <CircleButton onPress={() => { navigation.navigate('MemoEdit'); }}>
+      <CircleButton onPress={() => { navigation.navigate('MemoEdit', { id: memo.id, bodyText: memo.bodyText }); }}>
         <Feather
           name="plus" size={32} color="white"
         />
