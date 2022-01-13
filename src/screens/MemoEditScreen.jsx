@@ -14,7 +14,6 @@ export default function MemoEditScreen(props) {
 
   function handlePress() {
     const { currentUser } = firebase.auth();
-    console.log(currentUser);
     if (currentUser) {
       const db = firebase.firestore();
       const ref = db.collection(`users/${currentUser.uid}/memos`).doc(id);
